@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Zylite Executor - Downloading...</title>
+  <meta name="description" content="Your download is starting. Get ready to use Zylite Executor." />
+  <meta name="theme-color" content="#2F6FD6" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Downloading Zylite Executor..." />
+  <meta property="og:description" content="Your download is starting. Get ready to use Zylite Executor." />
+  <meta property="og:image" content="logo.png" />
+
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="star-container"></div>
+  <div id="cursorGlow" aria-hidden="true"></div>
+  <div class="shooting-stars" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="hdr" id="top">
+    <div class="wrap hdr__inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" width="36" height="36" alt="" class="brand__mark" />
+        <span class="brand__text">Zylite</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="download.html">Back</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="min-height: 90vh; display: flex; align-items: center; justify-content: center;">
+      <div class="download-card" id="downloadPageContent"
+        data-download-url="https://github.com/7kcy/Zylite.lol/releases/latest/download/Zylite.Executor.zip">
+
+        <img src="logo.png" alt="Zylite Logo" class="dl-logo">
+
+        <div style="width: 100%;">
+          <h3 id="statusText" style="margin: 0 0 15px; font-size: 18px;">Initializing...</h3>
+
+          <div class="progress-container">
+            <div id="progressBar" class="progress-fill"></div>
+          </div>
+
+          <p id="percentageText" style="font-weight: 700; color: #fff;">0%</p>
+        </div>
+
+        <div class="dl-footer">
+          <p style="margin: 0 0 8px;">Thanks for downloading Zylite.</p>
+          <p style="margin: 0;">Need support? <a href="https://discord.gg/DfUVYwB9" target="_blank"
+              style="color: #fff; text-decoration: underline;">Join Discord</a></p>
+          <a href="#" id="manualLink" style="display:none;">Manual Link</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
